@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
-function App() {
+import DemoList from "./components/Demo/DemoList";
+import Button from "./components/UI/Button/Button";
+import "./App.css";
+
+const App = () => {
+  const [listTitle, setListTitle] = useState("My List");
+
+  const changeTitleHandler = () => {
+    setListTitle("New Title");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <DemoList title={listTitle} items={[5, 3, 1, 10, 9]} />
+      <Button onClick={changeTitleHandler}>Change List Title</Button>
     </div>
   );
-}
+};
 
 export default App;
