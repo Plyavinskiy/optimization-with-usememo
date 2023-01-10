@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 import DemoList from "./components/Demo/DemoList";
 import Button from "./components/UI/Button/Button";
@@ -7,9 +7,9 @@ import "./App.css";
 const App = () => {
   const [listTitle, setListTitle] = useState("My List");
 
-  const changeTitleHandler = () => {
+  const changeTitleHandler = useCallback(() => {
     setListTitle("New Title");
-  };
+  }, []);
 
   return (
     <div className="app">

@@ -1,3 +1,5 @@
+import React from "react";
+
 import classes from "./DemoList.module.css";
 
 const DemoList = (props) => {
@@ -17,4 +19,4 @@ const DemoList = (props) => {
   );
 };
 
-export default DemoList;
+export default React.memo(DemoList);
