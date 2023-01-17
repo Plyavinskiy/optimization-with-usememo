@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/optimization-with-usememo/static/css/main.5edabb1e.css",
+    "main.js": "/optimization-with-usememo/static/js/main.8c09b698.js",
+    "index.html": "/optimization-with-usememo/index.html",
+    "main.5edabb1e.css.map": "/optimization-with-usememo/static/css/main.5edabb1e.css.map",
+    "main.8c09b698.js.map": "/optimization-with-usememo/static/js/main.8c09b698.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5edabb1e.css",
+    "static/js/main.8c09b698.js"
+  ]
+}
